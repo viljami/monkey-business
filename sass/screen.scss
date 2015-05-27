@@ -6,6 +6,14 @@
 @import "compass/reset";
 @import "compass";
 
+/*
+Todo:
+- better use of variables (width, height)
+-
+
+*/
+
+$lightColor: #ebffff;
 $fontColor: #5b5b5b;
 $background: #f9f9f9;
 $inputBackground: #f6f5f3;
@@ -46,7 +54,7 @@ form {
     background-color: $inputBackground;
     color: $fontColor;
     border: 0;
-    box-shadow: inset 3px 3px 5px $shadowColor;
+    @include box-shadow(inset 3px 3px 5px $shadowColor);
     border-radius: 4px;
   }
 
@@ -63,9 +71,9 @@ form {
     width: auto;
     height: 42px;
     float: right;
-    box-shadow: none;
+    @include box-shadow(none);
     @include background-image(linear-gradient($buttonStartColor, $buttonEndColor));
-    color: #ebffff;
+    color: $lightColor;
     font-size: 15px;
     line-height: 15px;
     padding-top: 3px;
