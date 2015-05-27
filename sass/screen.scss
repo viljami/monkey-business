@@ -66,10 +66,25 @@ form {
     box-shadow: none;
     @include background-image(linear-gradient($buttonStartColor, $buttonEndColor));
     color: #ebffff;
+    font-size: 15px;
+    line-height: 15px;
+    padding-top: 3px;
   }
 }
 
 .toTop {
   margin-top: 5px;
   vertical-align: top;
+}
+
+/* Sometimes it would be good to take into account height too. */
+/* Increase font-size for mobile? */
+@media screen and (max-width: 629px){
+  form {
+    width: 420px; /* Smallest screen width 320px? */
+
+    label {
+      text-align: left;
+    }
+  }
 }
