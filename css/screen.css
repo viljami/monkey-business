@@ -66,3 +66,102 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/*
+Todo:
+- better use of variables (width, height)
+-
+
+*/
+/* line 24, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 26, ../sass/screen.scss */
+body {
+  background-color: #f9f9f9;
+  color: #fontColor;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+/* line 33, ../sass/screen.scss */
+form {
+  width: 635px;
+  margin: 17px auto 50px auto;
+}
+/* line 37, ../sass/screen.scss */
+form label {
+  width: 210px;
+  text-align: right;
+  display: inline-block;
+  margin: 0;
+  padding-right: 50px;
+}
+/* line 45, ../sass/screen.scss */
+form select {
+  width: 420px;
+  margin: 0 0 17px 0;
+}
+/* line 50, ../sass/screen.scss */
+form input, form textarea {
+  width: 420px;
+  margin: 0 0 17px 0;
+  padding: 5px 10px;
+  background-color: #f6f5f3;
+  color: #5b5b5b;
+  border: 0;
+  -moz-box-shadow: inset 3px 3px 5px #cdcdcd;
+  -webkit-box-shadow: inset 3px 3px 5px #cdcdcd;
+  box-shadow: inset 3px 3px 5px #cdcdcd;
+  border-radius: 4px;
+}
+/* line 61, ../sass/screen.scss */
+form textarea {
+  min-height: 200px;
+}
+/* line 65, ../sass/screen.scss */
+form input {
+  height: 44px;
+  margin-left: 3px;
+}
+/* line 70, ../sass/screen.scss */
+form input[type="submit"] {
+  width: auto;
+  height: 42px;
+  float: right;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEwNzlhOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBlNWE3YSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1079a9), color-stop(100%, #0e5a7a));
+  background-image: -moz-linear-gradient(#1079a9, #0e5a7a);
+  background-image: -webkit-linear-gradient(#1079a9, #0e5a7a);
+  background-image: linear-gradient(#1079a9, #0e5a7a);
+  color: #ebffff;
+  font-size: 15px;
+  line-height: 15px;
+  padding-top: 3px;
+}
+
+/* line 83, ../sass/screen.scss */
+.toTop {
+  margin-top: 5px;
+  vertical-align: top;
+}
+
+/* Sometimes it would be good to take into account height too. */
+/* Increase font-size for mobile? */
+@media screen and (max-width: 629px) {
+  /* line 91, ../sass/screen.scss */
+  form {
+    width: 420px;
+    /* Smallest screen width 320px? */
+  }
+  /* line 94, ../sass/screen.scss */
+  form label {
+    text-align: left;
+  }
+}
