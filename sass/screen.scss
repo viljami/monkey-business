@@ -4,3 +4,38 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+$background: #f9f9f9;
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: $background;
+}
+
+form {
+  width: 635px;
+  margin: 0 auto;
+
+  label {
+    width: 210px;
+    text-align: right;
+    display: inline-block;
+    margin: 0;
+  }
+
+  input, textarea, select {
+    width: 420px;
+    margin: 0;
+  }
+
+  input {
+    margin-left: 3px;
+  }
+
+  input[type="submit"] {
+    width: auto;
+    float: right;
+  }
+}
+
