@@ -18,6 +18,8 @@ $buttonEndColor: #0e5a7a;
 body {
   background-color: $background;
   color: #fontColor;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 12px;
 }
 
 form {
@@ -67,3 +69,7 @@ form {
   }
 }
 
+.toTop {
+  margin-top: 5px;
+  vertical-align: top;
+}
