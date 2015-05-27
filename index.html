@@ -26,14 +26,14 @@
 
         <!-- Add your site or application content here -->
         <form method="GET" action="index.html">
-            <label>First name</label><input type="text" required >
-            <label>Surname</label><input type="text" required >
-            <label>Email address</label><input type="email" required >
-            <label>Daytime contact number</label><input type="text" required >
-            <label>Address</label><input type="text" required >
-            <label>Suburb</label><input type="text" required >
-            <label>State</label>
-            <select required >
+            <label for="firstname">First name</label><input id="firstname" type="text" required name="firstName">
+            <label for="surname">Surname</label><input id="surname" type="text" required name="surname">
+            <label for="email">Email address</label><input id="email" type="email" required name="email">
+            <label for="phone">Daytime contact number</label><input id="phone" type="text" required name="phone">
+            <label for="address">Address</label><input id="address" type="text" required name="address">
+            <label for="suburb">Suburb</label><input id="suburb" type="text" required name="suburb">
+            <label for="state">State</label>
+            <select id="state" required name="state">
                 <option>-- Select --</option>
                 <option value="ACT">ACT</option>
                 <option value="NSW">NSW</option>
@@ -44,20 +44,20 @@
                 <option value="VIC">VIC</option>
                 <option value="WA">WA</option>
             </select>
-            <label>Postcode</label><input type="text" required >
-            <label>Enquiry type</label>
-            <select required >
+            <label for="postcode">Postcode</label><input id="postcode" type="text" required name="postcode">
+            <label for="enquiryType">Enquiry type</label>
+            <select id="enquiryType" required name="enquiryType">
                 <option>-- Select --</option>
                 <option value="general">General enquiry</option>
                 <option value="feedback">Product feedback or enquiry</option>
                 <option value="complaint">Product complaint</option>
             </select>
-            <label>Product name</label><input type="text">
-            <label>Post size</label><input type="text">
-            <label>Use by date</label><input type="text">
-            <label>Batch code</label><input type="text">
-            <label class="toTop">Enquiry</label>
-            <textarea></textarea>
+            <label for="productName">Product name</label><input id="productName" type="text" name="productName">
+            <label for="productSize">Product size</label><input id="productSize" type="text" name="productSize">
+            <label for="useByDate">Use by date</label><input id="useByDate" type="text" name="useByDate">
+            <label for="batchCode">Batch code</label><input id="batchCode" type="text" name="batchCode">
+            <label for="enquiry" class="toTop">Enquiry</label>
+            <textarea id="enquiry" name="enquiry"></textarea>
             <input type="submit" value="SUBMIT &gt;">
         </form>
 
