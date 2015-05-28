@@ -25,7 +25,8 @@
             "global/has_google_analytics.js"
         ],
         "pages": [{
-            "url": "../index.html"
+            "url": "../index.html",
+            "tests": ["form-tests.js"]
         }],
         "proxyUrl": "core/proxy.php?mode=native&url=<%= url %>",
         "loadSources": true
