@@ -30,13 +30,13 @@
         <form method="GET" action="index.html">
             <label for="firstname">First name</label><input id="firstname" type="text" required name="firstName">
             <label for="surname">Surname</label><input id="surname" type="text" required name="surname">
-            <label for="email">Email address</label><input id="email" type="email" required name="email">
+            <label for="email">Email address</label><input id="email" type="text" required name="email">
             <label for="phone">Daytime contact number</label><input id="phone" type="text" required name="phone">
             <label for="address">Address</label><input id="address" type="text" required name="address">
             <label for="suburb">Suburb</label><input id="suburb" type="text" required name="suburb">
             <label for="state">State</label>
             <select id="state" required name="state">
-                <option>-- Select --</option>
+                <option value="">-- Select --</option>
                 <option value="ACT">ACT</option>
                 <option value="NSW">NSW</option>
                 <option value="NT">NT</option>
@@ -49,7 +49,7 @@
             <label for="postcode">Postcode</label><input id="postcode" type="text" required name="postcode">
             <label for="enquiryType">Enquiry type</label>
             <select id="enquiryType" required name="enquiryType">
-                <option>-- Select --</option>
+                <option value="">-- Select --</option>
                 <option value="general">General enquiry</option>
                 <option value="feedback">Product feedback or enquiry</option>
                 <option value="complaint">Product complaint</option>
