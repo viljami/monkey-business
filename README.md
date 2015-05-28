@@ -24,4 +24,6 @@ When writing test be sure not to mix "setup" function to "forEach". If your page
  * http://compass-style.org/
  * http://vanilla-js.com/
 
+Test framework:
+ * https://github.com/TheMonkeys/MonkeytestJS
 
