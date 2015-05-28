@@ -3,7 +3,6 @@
 
 var toArray = function(a){ return Array.prototype.slice.call(a); };
 var isRequired = function(el){ return !! el.required; };
-var isValid = function(a){ return !! a; }; // naming...
 var isInputField = function(el){
   return ['select', 'input', 'textarea']
     .indexOf(el.tagName.toLowerCase()) !== -1;
