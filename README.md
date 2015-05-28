@@ -25,5 +25,9 @@ When writing test be sure not to mix "setup" function to "forEach". If your page
  * http://vanilla-js.com/
 
 Test framework:
+ 
  * https://github.com/TheMonkeys/MonkeytestJS
 
+# Todo
+
+ - Link test framework as dependency rather than hard copy it to repo
